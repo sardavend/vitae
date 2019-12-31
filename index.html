@@ -166,14 +166,13 @@
         </p>
     </article>
 </section>
-        <footer class="thirteen columns">
-     <p id="year_resumen"> </p>
+        <footer id="year_resumen"class="thirteen columns">
 		</footer>
 	<script>
 	    const res_element = document.getElementById("year_resumen")
 	     const now = new Date()
 	     const year = now.getFullYear()
-	     res_element.textContent = `&copy; ${year} Juan Carlos&#39;s Resume`
+	     res_element.appendChild(document.createTextNode(`${year} Juan Carlos's Resume`))
     </script>
       </div>
     </div>
