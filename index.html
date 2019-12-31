@@ -18,6 +18,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="favicon" href="https://sardavend.github.io/vitae/img/favicon.ico">
+
     
   </head>
 
@@ -53,9 +54,9 @@
 	<article>
 		<header>
 			<h1>Software Developer</h1>
-			<span><address>Nimbus Latam, Santiago, CL,</address><time>January 2018 to present</time>
+			<span><address>Nimbus Latam, Santiago, CL,</address><time>February 2018 to present</time>
 		</header>
-		<p>Serving as a Full-Stack Software developer and helping to design and shape new digital products for the car and finance industries</p>
+		<p>Serving as a Full-Stack Software developer and helping to design and shape new digital products for the car and financial industry</p>
 	</article>
     <article>
         <header>
@@ -148,22 +149,32 @@
             &nbsp;&nbsp;<em>Javascript</em>
         <p>
             <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
-            &nbsp;&nbsp;<em>Java</em>, <em>Python</em>, <em>Go</em> &amp; <em>Git</em>
+		&nbsp;&nbsp;<em>Java</em>, <em>Python</em>, <em>Go</em>, <em>Ruby</em> &amp; <em>Git</em>
         </p>
         <p>
             <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
-            &nbsp;&nbsp;<em>MongoDB</em>, <em>Postgres</em>
+            &nbsp;&nbsp;<em>MongoDB</em>, <em>Redis</em>, <em>Postgres</em>, <em>Mysql</em>
+        </p>
+	<p>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+            &nbsp;&nbsp;<em>AMQP(RabbitMQ)</em>, <em>Postgres</em>
         </p>
         <p>
             <!-- <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i> -->
             <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
-            &nbsp;&nbsp;<em>HTML5/CSS3/PWA</em> 
+            &nbsp;&nbsp;<em>HTML5/CSS3/Jquery/AngularJS/React</em> 
         </p>
     </article>
 </section>
         <footer class="thirteen columns">
-     <p>&copy; 2017 Juan Carlos&#39;s Resume </p>
-</footer>
+     <p id="year_resumen"> </p>
+		</footer>
+	<script>
+	    const res_element = document.getElementById("year_resumen")
+	     const now = new Date()
+	     const year = now.getFullYear()
+	     res_element.textContent = `&copy; ${year} Juan Carlos&#39;s Resume`
+    </script>
       </div>
     </div>
   </body>
